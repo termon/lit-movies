@@ -1,0 +1,27 @@
+{
+  "name": "lit-vite-movies",
+  "version": "0.0.0",
+  "main": "dist/my-vite-element.es.js",
+  "exports": {
+    ".": "./dist/my-vite-element.es.js"
+  },
+  "types": "types/my-element.d.ts",
+  "files": [
+    "dist",
+    "types"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build"
+  },
+  "dependencies": {
+    "@adobe/lit-mobx": "*",
+    "@vaadin/router": "^1.7.4",
+    "lit": "*",
+    "mobx": "^6.3.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.5",
+    "vite": "^2.4.4"
+  }
+}

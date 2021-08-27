@@ -36,8 +36,8 @@ export class MovieDetails extends MovieBase {
             <div class="card-body">
               <h4 class="card-title">${ this.movie.title} <span class="badge bg-info fs-6">${this.movie.vote_average}</span></h4>
               <h5 class="fs-5">Released <span class="fs-6 text-muted">${ this.movie.release_date }</span></h5> 
-              <h5 class="card-subtitle mb-2 text-muted">${ this.movie.credits.crew.slice(0,2).map(a => html`<span>${a.name} </span>`)   }</h5>
-              <h6 class="card-subtitle mb-2 text-muted">${ this.movie.credits.cast.slice(0,4).map(a => html`<span>${a.name} </span>`) }</h6>              
+              <h5 class="card-subtitle mb-2 text-muted">${ this.movie.credits.cast.slice(0,4).map(a => html`<span>${a.name} </span>`) }</h5>              
+              <h6 class="card-subtitle mb-2 text-muted">${ this.movie.credits.crew.slice(0,2).map(a => html`<span>${a.name} </span>`) }</h6>
               <p class="card-text">${ this.movie.overview }</p>
               <p> Runtime <span class="badge rounded-pill bg-primary">${this.movie.runtime}</span></p>      
             </div>
